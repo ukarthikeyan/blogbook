@@ -7,7 +7,7 @@ const Blogs = ()=>{
     const [posts, setPosts] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:3000/api/posts')
+        fetch('https://blogbook-brown.vercel.app/api/posts')
         .then(res => res.json())
         .then(data => setPosts(data))
         .catch(err => console.log(err))
